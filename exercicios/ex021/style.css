@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    background-color: lightgray;
+   
+    height: 300px;
+    width: 300px;
+
+    /*
+    border-width: 10px;
+    border-style: solid;
+    border-color: rgb(250, 167, 167);
+    */
+
+    border: 10px solid rgb(241, 92, 92);
+
+    /*
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    */
+
+    padding: 10px;
+
+    /*
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    */
+
+    margin: 10px auto 30px;
+    
+    /*
+    outline-width: 10px;
+    outline-style: dashed;
+    outline-color: brown;
+    */
+
+    outline: 5px dashed brown;
+}
+a {
+    /*
+    border-width: 3px;
+    border-style: groove;
+    border-color: brown;
+    */
+
+    border: 3px dashed rgb(122, 165, 42);
+
+    /*
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    */
+
+    padding: 2px;
+}

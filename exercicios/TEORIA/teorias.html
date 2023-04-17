@@ -1,0 +1,94 @@
+Essa tearia começa no capitulo 17.
+
+recapitulando e fazendo na pratica um projeto.
+
+    primeira coisa que tem que fazer é planejar o site.
+
+    primeiro - Leyout
+    segundo - cores
+    terceiro - fontes
+
+      DICAS
+
+DICAS -   <aside> -> periferico.
+DICAS -   <abbr> -> abreviação (<abbr title="Saunduiche de Sorvete">Ice Cream Sandwich</abbr>.).
+DICAS -   :root -> pseudo classe (raiz da arvore documento).
+DICAS -   -- (todas as variaveis em CSS começão com 2-"--")
+DICAS -    *(seletor global, tudo que esta "abaixo" segui as configurações escolhidas).
+
+
+para escolher uma fonte que foi baixada no computador seguir a seguência.
+1-Fazer o download da fonte.
+2-Adinionar a importação. apos isso por o comando ->
+  @font-face {
+    font-family: ''; (entre '' aspas simples escolher o nome da fonte.)
+    src: url(); (entre colchetes escolher o local da fonte).
+    Dica -> (para ficar facil de localizar, dentro dos colchetes por uma ../ 2 pontos e uma barra. fica assim (../), o VScode já mostra as pastas.)
+  }   no final fica assim:
+          @font-face {
+            font-family: 'Android';
+            src: url(../fontes/idroid.otf) format('opentype');
+            font-weight: normal;}
+
+
+
+Variaveis em CSS
+-- (todas as variaveis em CSS começão com 2-"--")
+EX: 
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --forte-android: 'Android', cursive;
+
+para alterar o símbolo de uma lista seguir o comando:  
+
+        ul {
+          list-style-type: '\2714\0020\0020';
+          columns: 2;
+          list-style-position: inside;
+        }
+
+        A primeira linha de declaração faz com que o marcador seja persolanidado com o parâmetro list-style-type. O valor \2714 corresponde ao símbolo que tem o código Unicode U+2714. O valor \0020 corresponde a um espaço em branco
+        A segunda declaração indica a quantidade de colunas.
+        A terceira declaração vai fazer com que os marcadores sejam exibidos na parte interna da caixa
+
+Ajudar na leitura.
+
+        DICAS -   text-indent: ; (é o recuo no começo do paragrafo).
+        Dica -     line-height: 1.2em; (altura do espaçamento entre as linhas)
+
+
+Exemplo de como ajustar video do youtube 
+
+        div.video {
+          background-color: var(--cor4);
+          margin: 0px, -20px -30px -20px;
+          padding: 10px;
+          padding-bottom: 55%;
+          position: relative;
+
+        }
+
+        div.video > iframe {
+          position: absolute;
+          top: 5%;
+          left: 5%;
+          width: 90%;
+          height: 90%;
+
+        }
+
+        Vercionamento de Software.
+
+
+          Capitulo 18.
+
+Git = Repositorio Local.
+GitHob = Repositorio Remoto.
+

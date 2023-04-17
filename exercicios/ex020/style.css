@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+body {
+    background-image: linear-gradient(to top, rgb(252, 92, 92), rgb(164, 248, 95));background-attachment: fixed;
+}
+main {
+    background-color: rgb(164, 248, 95);
+    box-shadow: 5px 5px 15px rgba(248, 95, 95, 0.534);
+    border-radius: 10px;
+    width: 500px;
+    padding: 10px;
+    margin: auto;
+
+}
+
+
+#h1 {
+    color:brown;
+    text-align: center;
+}
+#primeiro {
+    color: brown;
+}
+.segundo {
+    color: blue;
+}
+div > p {
+    display: none;
+}
+div:hover > p {
+    display: block;
+    color: black;
+    background-color: white;
+    width: 200px;
+}
