@@ -4,29 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body {
+            height: 100vh;
+            /*
+            SHORTHAND - background
+            segue a seguinte seguencia:
+            color > image > position > repeat > [size] > attanchment 
             background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
             background-repeat: no-repeat;
+            */
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
             background-size: cover;
-            /* A função backgroud-size.
-            Opção de cover, fax com que a imagem sejá "adaptavel" com corte da imagem vai preenxer a "tela inteira".
+            /*
+            A função backgroud-size.
+            Opção de cover, faz com que a imagem sejá "adaptavel" com corte da imagem vai preenxer a "tela inteira".
             Opção contain, faz com que a imagem sejá "adaptavel" sem cortar a imagem.
-            Opção auto, o navegador exibe a imagem conforme a sua vontade. também pode por o o parametro em px ou % */
-        
+            Opção auto, o navegador exibe a imagem conforme a sua vontade. também pode por o o parametro em px ou %
+            */
+            background-attachment: fixed;
+            /*
+            Juntando background-size: cover e background-attachment: fixed faz com que a imagem no fundo fique fixada e o texto fique colante.
+            */
+
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 800px;
             text-align: justify;
-            border: 1px solid darkblue;
-            border-radius: 10px;
-            padding: 10px;
+            padding: 20px;
             margin: auto;
+            border: 1px solid darkblue;
+            border-radius: 15px;
+            
+
         }
 
 
@@ -36,6 +51,18 @@
     <main>
         <h1>Teste de imagem de fundo</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis iste aut vitae, quia impedit omnis vero molestias, iusto deserunt tempore blanditiis ea architecto! Minima, ab. Excepturi ducimus a ipsum dignissimos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima eos quidem beatae. Nobis deserunt cupiditate iure id veniam ea, sapiente voluptatibus qui quisquam culpa quia animi saepe, earum doloremque unde? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi necessitatibus, natus architecto sapiente doloremque cum tenetur placeat nostrum accusamus aspernatur iusto quam sed! Eveniet, soluta? Repellat quidem accusamus quibusdam accusantium!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis iste aut vitae, quia impedit omnis vero molestias, iusto deserunt tempore blanditiis ea architecto! Minima, ab. Excepturi ducimus a ipsum dignissimos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima eos quidem beatae. Nobis deserunt cupiditate iure id veniam ea, sapiente voluptatibus qui quisquam culpa quia animi saepe, earum doloremque unde? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi necessitatibus, natus architecto sapiente doloremque cum tenetur placeat nostrum accusamus aspernatur iusto quam sed! Eveniet, soluta? Repellat quidem accusamus quibusdam accusantium!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis iste aut vitae, quia impedit omnis vero molestias, iusto deserunt tempore blanditiis ea architecto! Minima, ab. Excepturi ducimus a ipsum dignissimos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima eos quidem beatae. Nobis deserunt cupiditate iure id veniam ea, sapiente voluptatibus qui quisquam culpa quia animi saepe, earum doloremque unde? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi necessitatibus, natus architecto sapiente doloremque cum tenetur placeat nostrum accusamus aspernatur iusto quam sed! Eveniet, soluta? Repellat quidem accusamus quibusdam accusantium!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis iste aut vitae, quia impedit omnis vero molestias, iusto deserunt tempore blanditiis ea architecto! Minima, ab. Excepturi ducimus a ipsum dignissimos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima eos quidem beatae. Nobis deserunt cupiditate iure id veniam ea, sapiente voluptatibus qui quisquam culpa quia animi saepe, earum doloremque unde? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi necessitatibus, natus architecto sapiente doloremque cum tenetur placeat nostrum accusamus aspernatur iusto quam sed! Eveniet, soluta? Repellat quidem accusamus quibusdam accusantium!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis iste aut vitae, quia impedit omnis vero molestias, iusto deserunt tempore blanditiis ea architecto! Minima, ab. Excepturi ducimus a ipsum dignissimos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima eos quidem beatae. Nobis deserunt cupiditate iure id veniam ea, sapiente voluptatibus qui quisquam culpa quia animi saepe, earum doloremque unde? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi necessitatibus, natus architecto sapiente doloremque cum tenetur placeat nostrum accusamus aspernatur iusto quam sed! Eveniet, soluta? Repellat quidem accusamus quibusdam accusantium!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis iste aut vitae, quia impedit omnis vero molestias, iusto deserunt tempore blanditiis ea architecto! Minima, ab. Excepturi ducimus a ipsum dignissimos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima eos quidem beatae. Nobis deserunt cupiditate iure id veniam ea, sapiente voluptatibus qui quisquam culpa quia animi saepe, earum doloremque unde? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi necessitatibus, natus architecto sapiente doloremque cum tenetur placeat nostrum accusamus aspernatur iusto quam sed! Eveniet, soluta? Repellat quidem accusamus quibusdam accusantium!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis iste aut vitae, quia impedit omnis vero molestias, iusto deserunt tempore blanditiis ea architecto! Minima, ab. Excepturi ducimus a ipsum dignissimos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima eos quidem beatae. Nobis deserunt cupiditate iure id veniam ea, sapiente voluptatibus qui quisquam culpa quia animi saepe, earum doloremque unde? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi necessitatibus, natus architecto sapiente doloremque cum tenetur placeat nostrum accusamus aspernatur iusto quam sed! Eveniet, soluta? Repellat quidem accusamus quibusdam accusantium!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis iste aut vitae, quia impedit omnis vero molestias, iusto deserunt tempore blanditiis ea architecto! Minima, ab. Excepturi ducimus a ipsum dignissimos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima eos quidem beatae. Nobis deserunt cupiditate iure id veniam ea, sapiente voluptatibus qui quisquam culpa quia animi saepe, earum doloremque unde? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi necessitatibus, natus architecto sapiente doloremque cum tenetur placeat nostrum accusamus aspernatur iusto quam sed! Eveniet, soluta? Repellat quidem accusamus quibusdam accusantium!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis iste aut vitae, quia impedit omnis vero molestias, iusto deserunt tempore blanditiis ea architecto! Minima, ab. Excepturi ducimus a ipsum dignissimos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima eos quidem beatae. Nobis deserunt cupiditate iure id veniam ea, sapiente voluptatibus qui quisquam culpa quia animi saepe, earum doloremque unde? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi necessitatibus, natus architecto sapiente doloremque cum tenetur placeat nostrum accusamus aspernatur iusto quam sed! Eveniet, soluta? Repellat quidem accusamus quibusdam accusantium!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis iste aut vitae, quia impedit omnis vero molestias, iusto deserunt tempore blanditiis ea architecto! Minima, ab. Excepturi ducimus a ipsum dignissimos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima eos quidem beatae. Nobis deserunt cupiditate iure id veniam ea, sapiente voluptatibus qui quisquam culpa quia animi saepe, earum doloremque unde? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi necessitatibus, natus architecto sapiente doloremque cum tenetur placeat nostrum accusamus aspernatur iusto quam sed! Eveniet, soluta? Repellat quidem accusamus quibusdam accusantium!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis iste aut vitae, quia impedit omnis vero molestias, iusto deserunt tempore blanditiis ea architecto! Minima, ab. Excepturi ducimus a ipsum dignissimos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima eos quidem beatae. Nobis deserunt cupiditate iure id veniam ea, sapiente voluptatibus qui quisquam culpa quia animi saepe, earum doloremque unde? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi necessitatibus, natus architecto sapiente doloremque cum tenetur placeat nostrum accusamus aspernatur iusto quam sed! Eveniet, soluta? Repellat quidem accusamus quibusdam accusantium!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis iste aut vitae, quia impedit omnis vero molestias, iusto deserunt tempore blanditiis ea architecto! Minima, ab. Excepturi ducimus a ipsum dignissimos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima eos quidem beatae. Nobis deserunt cupiditate iure id veniam ea, sapiente voluptatibus qui quisquam culpa quia animi saepe, earum doloremque unde? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi necessitatibus, natus architecto sapiente doloremque cum tenetur placeat nostrum accusamus aspernatur iusto quam sed! Eveniet, soluta? Repellat quidem accusamus quibusdam accusantium!</p>
+
     </main>
 </body>
 </html>
