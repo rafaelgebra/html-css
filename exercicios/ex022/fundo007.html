@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+        section#container {
+            background-image: url(imagens/target001.png);/*Imagem de fundo da id "# container"*/
+            background-size: 100% 100%;/*preenchimento de 100% da tela*/
+            position: relative;/*A posição da imagem do conteúdo é relativa "de forma natural a posição já é relativa, no caso só esta afirmando a posição"*/
+            height: 96vh;/*Esta tomando a % do tamanho da tela*/
+            padding: 10px;
+            background-color: purple;/*Cor do fundo "Referente a #container"*/
+        }
+
+        section#container:hover {
+            background-color: yellow;/*Muda a cor quando passar o mouse na frente*/
+        }
+
+        article#conteudo {
+            background-image: url(imagens/target001.png);/*Imagem de fundo dentro do id "#conteudo"*/
+            background-size: 100% 100%;/*Definindo que vai ocupar 100% de tota a tela*/
+
+            position: absolute;/*A posição agora é absoluta "fixa", agora com "left e top" consegue mover para o lado desejado*/
+            height: 200px;/*Definição da altura*/
+            width: 400px;/*Definição do comprimento*/
+            background-color: yellow;/*Cor da caixa dentro do #container*/
+
+            left: 50%;/*Posição escolida em % ajuda a ter o meio da tela (mas pode usar px se desejar)*/
+            top: 50%;/*Posição escolida em % ajuda a ter o meio da tela (mas pode usar px se desejar)*/
+            transform: translate(-50%, -50%);/*Movimento da caixa (com o valor negativo conseguiu mover para a esquerda e para cima, centralizando ela)*/
+        }
+
+        article#conteudo:hover {
+            background-color: purple;/*Muda a cor quando passar o mouse na frente*/
+        }
+
+
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+    
+</body>
+</html>
