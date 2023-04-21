@@ -78,14 +78,13 @@ section#sec2 {
 p#par2 {
     height: 100vh;
     padding: 10px 5px;
-    background-color: rgba(3, 24, 3, 0.5);
+    background-color: rgba(3, 24, 3, 0.87);
     color: rgb(250, 244, 234);
     font-size: 3em;
     max-width: 400px;
     max-height: 450px;
     position: relative;
     transform: translate(20px, 35px);
-
 
 }
 
@@ -139,7 +138,6 @@ footer > p {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     font-size: 1em;
-
-   
+  
 
 }
