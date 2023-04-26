@@ -112,13 +112,21 @@ Dica - font-variant: small-caps;/*Deixa todas a letras maiusculas porém as prim
 A ESTRUTURA de site não pode ser feito com base uma tebela.
 A tabela é usada para tabular dados.
 
+TAG <table></table> <!--Limita o tamanha da tabela-->
+
+
+
 <!--
-            HIERARQUIA  de Tabelas (Simples)
-            1 - TABLE = Tabela.
-                1.1 - TABLE ROW = Linha de tabela.
-                    1.1.1 - TABLE HEADER = Cabeçalho de Tabela.
-                    1.1.2 - TABLE DATA = Dado de Tabela.
-    -->
+    HIERARQUIA  de Tabelas (Simples)
+    1 - TABLE = Tabela.
+        1.1 - TABLE ROW = Linha de tabela.                = <tr></tr>
+            1.1.1 - TABLE HEADER = Cabeçalho de Tabela.   = <th></th>
+            1.1.2 - TABLE DATA = Dado de Tabela.          = <td></td>
+-->
+      <tr>Se usa em todas as tabelas, porque é a linha</tr>
+      <th>Só usa no lugar de <td></td> em locais que vai titulos, ex: cabeçalho da tabela</th>
+      <td>é usado para por dados na tabela 'alguns entende como sendo as colunas da tabela, mas não é. td é a celular da tabela</td>
+
 
     <table>
       <tr> <!-- Linha da Tabela-->
@@ -140,6 +148,25 @@ A opção de lista consegue configurar a posição dos dados.
 Pode mexer de forma individual indo direto na celuca <td></td>, ou pode mexer em todas em table {} ou tr {}.
 
 
-  Recomendação da W3C
-
   TAG para Tabelas SEMANTICAS
+        <!--Anatomias para tabelas grandes
+        TABLE
+            CAPTION // Legenda da tabela
+            THEAD
+                TR, TD, TH //O cabeçalho não é obrigatorio.
+            TBODY
+                TR, TD, TH //O carpo é obrigatorio.
+            TFOOT
+                TR, TD, TH //O rodapé não é o brigatorio.
+    -->
+
+      Escopo de títulos
+
+scope="col" - Informa a coluna -> Para deixar claro para o HTML é importante por no a informação do scope="" ajuda os site de busca acharem o seu site
+
+scope="row" - Informa a linha -> Para deixar claro para o HTML é importante por no a informação do scope="" ajuda os site de busca acharem o seu site
+
+      Efeito Zebrado
+  
+tbody > tr:nth-child("aqui dentro poe o valor de pulos ex: 1n, 2n ,3n ... ou odd 'impar' , even 'par' ou 2n-1, 3n-1. aqui dentro pode fazer uma dessas três opções") { 
+}

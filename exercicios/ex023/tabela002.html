@@ -1,12 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tabelas_Semanticas</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        caption {
+            background-color: lightgray;
+            color: rgb(20, 20, 20);
+            font-size: 1.5em;
+            font-weight: bolder;
+            padding: 5px;
+            border: 1px solid black;
+
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            caret-color: white;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
+        tbody > tr:nth-child(1n):hover {
+            text-decoration: underline;
+        }
+
+        th {
+            border: 1px solid black;
+            width: 300px;
+            height: 50px;
+            text-align: left;
+            vertical-align: middle;
+        }
+        
+        td {
+            border:1px solid black;
+            height: 30px;
+
+        }
+
+        td.d1 {
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        #total {
+            text-align: center;
+            vertical-align: middle;
+        }
+
+    </style>
 </head>
 <body>
-    
+    <h1>Uso de tabelas grandes</h1>
+    <!--Hierarquia/Anatomias para tabelas grandes
+        TABLE
+            CAPTION // Legenda da Tabela
+                THEAD
+                    TR, TD, TH //O cabeçalho não é obrigatorio.
+                TBODY
+                    TR, TD, TH //O carpo é obrigatorio.
+                TFOOT
+                    TR, TD, TH //O rodapé não é o brigatorio.
+        
+    -->
+
+    <table>
+        <caption>População das unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">Pupolação</th>
+                <th scope="col">% da pop. <br> total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="d1">45 919 049</td>
+                <td class="d1">21,9%</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="d1">21 168 791</td>
+                <td class="d1">10.1%</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="d1">17 264 943</td>
+                <td class="d1"> 8,2%</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="d1">14 873064</td>
+                <td class="d1">7.1%</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="d1">11 433 957</td>
+                <td class="d1">5,4%</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="d1">11 377 239</td>
+                <td class="d1">5,4%</td>
+            </tr>
+           
+        </tbody>
+        <tfoot>
+            <td>Total de Habitantes</td>
+            <th scope="row" id="total"><strong>0000000000</strong></th>
+            <td class="d1"><strong>000%</strong></td>
+        </tfoot>
+
+
+    </table>
 </body>
 </html>
