@@ -170,3 +170,20 @@ scope="row" - Informa a linha -> Para deixar claro para o HTML é importante por
   
 tbody > tr:nth-child("aqui dentro poe o valor de pulos ex: 1n, 2n ,3n ... ou odd 'impar' , even 'par' ou 2n-1, 3n-1. aqui dentro pode fazer uma dessas três opções") { 
 }
+
+                  Cabeçalho fixo
+
+    thead > tr > th {
+      position: sticky;
+      top: -1px;
+      background-color: gray ;
+    }
+
+    Para usar usa função, tem que primeiro por o TABLE a senguinte função.
+    table {
+      position: relative;
+    } //Essa configuração é nescessaria para que o cabeçalho consiga se mover.
+
+                  Mesclagem de células
+                  
+    
