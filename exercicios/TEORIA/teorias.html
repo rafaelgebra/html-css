@@ -186,4 +186,24 @@ tbody > tr:nth-child("aqui dentro poe o valor de pulos ex: 1n, 2n ,3n ... ou odd
 
                   Mesclagem de células
                   
-    
+    Tem duas fonmas de fazer.
+
+    1 - Espanção de linha.
+    Dentra de <table></table> fazer o seguinte função dentro da TAG <td></td>
+    <table>
+      <td>D</td>
+      <td rowspan="3">F</td>
+      <!-- <td>C</td> -->
+    </table>
+      Isso vai fazer com que o mesmo conteudo que esta dentro da célular B '<tb>F</tb>' ocupe o espaço das linhas conforme inserido.
+
+    2 - Espanção de coluna.
+
+    Dentra de <table></table> fazer o seguinte função dentro da TAG <td></td>
+    <table>
+      <td>A</td>
+      <td colspan="2">B</td>
+      <!-- <td>C</td> -->
+    </table>
+      Isso vai fazer com que o mesmo conteudo que esta dentro da célular B '<tb>B</tb>' ocupe o espaço das colunas conforme inserido.
+
