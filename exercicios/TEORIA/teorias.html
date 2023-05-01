@@ -189,7 +189,7 @@ tbody > tr:nth-child("aqui dentro poe o valor de pulos ex: 1n, 2n ,3n ... ou odd
     Tem duas fonmas de fazer.
 
             1 - Espanção de linha/mesclagem
-            
+
     Dentra de <table></table> fazer o seguinte função dentro da TAG <td></td>
     <table>
       <td>D</td>
@@ -208,3 +208,33 @@ tbody > tr:nth-child("aqui dentro poe o valor de pulos ex: 1n, 2n ,3n ... ou odd
     </table>
       Isso vai fazer com que o mesmo conteudo que esta dentro da célular B '<tb>B</tb>' ocupe o espaço das colunas conforme inserido.
 
+
+
+              Destaque de colunas
+Dentro da Tabela por a segunte TAG, <colgroup></colgroup> e dentro dessa TAG por a TAG <col>.
+Exemplo de tabela:
+
+    col.cnome {
+      background-color: chartreuse;
+    }
+    </style>
+    </head>
+    <body>
+    <table>
+    <colgroup>       
+      <col class="cnome">
+      <col class="csexo">
+      <col class="cidade">
+      <col class="cprof">
+    </colgroup>
+    <caption>Cadastro</caption>
+    <tr>
+      <th>Nome</th>
+      <th>Sexo</th>
+      <th>Idade</th>
+      <th>Profissão</th>
+    </tr>
+    <tr>
+
+Com essa nova TAG <colgroup></colgroup> pode identificar as colunas e destaca-las mas rapido e fácil.
+OBs: A configuração dentro da TAG <colgroup></colgroup> tem que estar em onder, o primeiro <col> dentro da <colgroup></colgroup> é destacado a primeira coluna ta <table></table> e assim por diante
