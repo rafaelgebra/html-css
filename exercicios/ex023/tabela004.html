@@ -9,6 +9,7 @@
     <style>
         body {
             background-color: rgba(211, 211, 211, 0.24);
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         table {
@@ -16,10 +17,18 @@
             border-collapse: collapse;
 
         }
+        
+        caption{
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+
+        }
 
         td, th {
             background-color: lightgrey;
             border: 1px solid black;
+            padding: 3px;
             width: 130px;
             height: 40px;
         }
@@ -39,13 +48,13 @@
             Filmes Favoritos
         </caption>
         <tr>
-            <th class="centro">Grupo</th>
-            <th class="centro">Nomes</th>
-            <th class="centro" colspan="3" >Filmes</th>
+            <th class="centro" scope="col">Grupo</th>
+            <th class="centro" scope="col">Nomes</th>
+            <th class="centro" colspan="3" scope="colgroup" >Filmes</th>
 
         </tr>
         <tr>
-            <th class="centro" rowspan="3">Mulheres</th>
+            <th class="centro" rowspan="3" scope="rowgroup">Mulheres</th>
             <td>Ana Maria Santos</td>
             <td>Alien</td>
             <td>Rambo</td>
@@ -66,7 +75,7 @@
             <td>Big Hero</td>
         </tr>
         <tr>
-            <th class="centro" rowspan="3">Homens</th>
+            <th class="centro" rowspan="3" scope="rowgroup">Homens</th>
             <td>Bruno Mendonça</td>
             <td>intocáveis</td>
             <td>Amnésia</td>
@@ -86,6 +95,11 @@
             <td>Taxi Driver</td>
             <td>Toy Story</td>
         </tr>
+        <tfoot>
+            <th colspan="4" scope="row">total</th>
+            <td>1000</td>
+
+        </tfoot>
     </table>
     
 </body>
