@@ -238,3 +238,17 @@ Exemplo de tabela:
 
 Com essa nova TAG <colgroup></colgroup> pode identificar as colunas e destaca-las mas rapido e fácil.
 OBs: A configuração dentro da TAG <colgroup></colgroup> tem que estar em onder, o primeiro <col> dentro da <colgroup></colgroup> é destacado a primeira coluna ta <table></table> e assim por diante
+
+
+
+Tabela RESPONSIVEL
+
+
+para deixar a tabela responsivas, basta selecionar toda a <table></table> e envelopar tudo em uma <div></div>. Após isso por uma div id="container" na <div></div> e no style por a configuração do style.
+EX:
+
+  #container {
+    overflow: auto;
+}
+
+<div id="container"><table>*****</table></div>
