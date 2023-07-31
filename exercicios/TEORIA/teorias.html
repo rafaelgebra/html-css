@@ -119,17 +119,112 @@ Um dos muitos locais que da para pegar o código do emoji é no emojipedia.org -
 
 
 
-  
+Basicamente é usado esses dois formatos na WEB.  
 Explicação de JPG/JPEG e PNG.
 
         JPG/JPEG  -> Alta compactação de arquivo.
         PNG       -> Baixa compactação, Transparência, maior qualidade.
 
 
+Site de informações do HTML W3C.org
+
+Para selecionar e por a TAG usar o atalho ctrl + shift + p
+
+informações.
+
+1º -> Usar a TAG <b></b> Não Semantica usando o <b></b> a TAG não tem sentido além de deixar negrito
+2º -> Usar a TAG <strong></strong> Além do negrito essa TAG da um "Sentido" a frase - Semantica
+3º -> Usar a TAG <i></i> para deixar as letras em formato Itálico - Não Semantica.
+4º -> Usar a TAG <mark></mark> a semantica dessa TAG é marcar o texto, a cor não é semantica "para mudar a cor de marcação pode ser feita de duas formas".
+      1º -> <mark style="background-color: lime;">"texto de teste"</mark>
+            depois do mark é estilo CSS.
+
+      2º -> Depois do <title> no cabeçalho pode criar um seletor mark assim.
+            mark { background-color: lime;
+            }
+            Fazendo esse tipo de marcação todas as TAG <mark></mark> ficam com a mesma cor.
+
+5º -> Usar a TAG <sup></sup> para elevar o "caracter" = 2+x².
+6º -> Usar a TAG <sub></sub> Para rebaixar o "caracter".
+7º -> Usar a TAG <code></code> Ótimo para ler TAG - finte mono espaçada
+            IMPORTANTE:
+                      A TAG <code></code> não deixar arrumado com identificação, deixa tudo junto.
+                      Para deixar organizado "da forma como digitou" usar a TAG <pre></pre>.
+
+8º -> Usar a TAG <q></q> Para por "ASPAS".
+            IMPORTANTE:
+                      É interessante usar essa TAG para dar uma enfase, está dando um sentido na situação.
+
+9º -> Usar a TAG <blockquote></blockquote> Para deslocar para frente o bloco.
+            IMPORTANTE:
+                      O <blockquote></blockquote> da para colocar o link, a citação. Isso é bom fazer para mostrar que o programa esta usando 'a frase de alguém, mostrando o caminho de alguma coisa' deixando claro que tem o direito altoral de usar'.
+                                      <blockquote cite="...">o dono da frase</blockquote>
+
+10º -> Usar a TAG <abbr title="..."></abbr> Quando se ultiliza essa TAG sozinha já sujere que ponha um title, um signidicado.
+
+11º -> Usar a TAG <bdo dir=""></bdo> É usada para alterar o sentido.
+            Quando se ultiliza essa TAG sozinha já sujere qual a direção da frase.
+
+                  <bdo dir="ltr">lugar da frase</bdo> direita
+                  <bdo dir="rtl">lugar da frase</bdo> esquerda
+                  <bdo dir=""></bdo> escolher qual quer escolher
 
 
+                                <!--       Listas       -->
 
 
+1º - Listas Ordenadas.
+
+            Para deixar uma lista de forma ordenada é usada a tag <ol></ol>.
+            Os iténs da lista ficam dentro da TAG <li></li>, "no HTML5 o fechamento da TAG </li> é OPCIONAL."
+
+            Na Lista Ordenada tem 5 formas de Ordenar.
+
+            Type "1" -> Ordem númerica.
+            Type "2" -> Ordem alfabética Maiúsculas.
+            Type "3" -> Ordem alfabética minúsculas.
+            Type "3" -> Ordem por algarismo Romano minúsculo.
+            Type "5" -> Ordem por algarismo Romadno Maiúsculo.
+    
+            Para alterar o type de uma ordem usar o seguinte parametro <ol type="{Usar uma das cinco opções}">
+    
+2º - Listas Não Ordenadas.
+
+            No caso de lista "não ordenadas" usar a TAG <ul></ul>.
+            Esse lista só tem 3 typos de classificação.
+
+            Type "disck"  -> 'é uma bolinha preta toda preenchida'
+            Type "circle" -> 'é um circulo'
+            Type "square" -> 'é um quadradinha preto todo preenchido'
+
+3º - Lista de Definição.
+
+            No caso da lista "dicionario" usar a TAG <dl></dl>.
+            
+            <dl>
+              <dt>TERMO</dt>
+              <dd>DESCRIÇÂO</dd>
+            </dl>
+
+                              <!--          Uso de LINK           -->
+
+Para usar o link como ancora usar a TAG <a href="aqui vai a URL">aqui vai um texto</a>
+
+                              <!--         Dicas importantes       -->
+
+                              <!--      LINK INTERNO E EXTERNO     -->  São links que fazer a relação entre as paginas.
+
+Para buscar um caminha de forma rápida usar o atalho com as seguintes teclas (Ctrl + espaço )dentro da função ou do parametro.
+
+target="_blank" -> Para abrir o link com a TAG <a href=""></a> mas não sobre-escrever o seu. Um alvo (uma Janela em branco).
+
+rel="external" -> LINK TIPO EXTERNO - É usada para abrir uma nova janela com o assunto do link. Usar essa informação na construção do site ajuda o navegador que o link usado é externo
+
+rel="next" -> Significa "Proximo/avanço". Isso facilida O SITE DE BUSCA a achar o seu site.
+
+rel="prev" -> Significa "anterior/primeira". Isso facilida O SITE DE BUSCA a achar o seu site.
+
+rel="nofollow" -> Indica para o site de busca que você "o site" não tem AVAL para o "Site/Propaganda".
 
 
 
