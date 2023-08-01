@@ -100,7 +100,6 @@ Para ter a estrutua base automáticamente, sem precisar digitar linha a linha é
 </body>
 </html>
 
-
 Para dar comentarios dentro do HTML é só digitar (<!---->) <!--Aqui dentro vai o comentario--> 
 
 head -> cabeçario
@@ -172,7 +171,6 @@ informações.
 
                                 <!--       Listas       -->
 
-
 1º - Listas Ordenadas.
 
             Para deixar uma lista de forma ordenada é usada a tag <ol></ol>.
@@ -226,6 +224,104 @@ rel="prev" -> Significa "anterior/primeira". Isso facilida O SITE DE BUSCA a ach
 
 rel="nofollow" -> Indica para o site de busca que você "o site" não tem AVAL para o "Site/Propaganda".
 
+terget="_self" -> Para indicar que você esta acessando uma pagina interna.
+
+            <!---       Para fazer o donwload de arquivo        -->
+
+<a href="...." download="nome do arquivo" type="application/pdf">Baixar o livro em PDF</a>
+
+
+            <!---     Adaptar a mídia a varios formatos de tela     -->
+
+            Imagem Dinamica/Flexivel
+
+<picture>
+  <source media="(max-width: 750px)" srcset="local da imagem" type="imagem/png"> = Exemplo da TAG source preenchida.
+  <source media="(min-width: )" srcset=""> = TAG source sem preencher
+</picture>
+
+            <!--                   Para usar aúdio                 -->
+
+            <source src="" type=""></audio>
+                        ou
+            <audio source src=""></audio>
+
+                        <audio preload="" autoplay controls src=""></audio>
+                                  <source src="" type="">
+                        <source src="local da imagem/tipo de imagem.mp3" type="audio/mpeg">
+                        <source src="local da imagem/tipo de imagem.ogg" type="audio/ogg">
+                        <source src="local da imagem/tipo de imagem.wav" type="audio/wav">
+    Sempre usar em primeiro lugar o arquivo em MP3 por ser mais leve, o arquivo em WAV é muito pesado, ATRAPALHA O SITE
+
+    Dentro do parametro <audio></audio> pode ser inserido outros parametros.
+    <audio preload="Auto, metadata, nome e outros"> 
+    <audio autoplay> usar o paramentro autoplay quando usar o parametro preload em auto.
+    <audio controls> Carrega somento os dados do audio, como = tempo, data, duração.
+
+
+              <!--                Para por vídeo                   -->
+
+A forma mais simple de por um vídeo é usar o parametro <video src=""></video> porém esse parametro só permite por um vídeo, isso não é bom porque nem todos os navegadores é compativel com o mesmo formato.
+
+Para resolver isso usar o seguinte parametroo.
+          <video controls>
+            <source src="local do vídeo" type="video/o formato do vídeo">
+          </video>
+          
+1 - Para por uma capa no vídeo uar o parametro <poster>.
+            poster="" =  Usar dentro po parametro vídeo.
+
+2 - Para dimencionar um vídeo ou imagem pod usar o parametro width="0px" isso não muda o tamanho só o zoom.
+
+3 - Para aparecer o botão play usar o parametro controls
+
+          <video controls poster="Local da imagem/imagem" width="300px">
+            <source src="Local da imagem/imagem.m4v" type="video/m4v">
+            <source src="Local da imagem/imagem.webm" type="video/webm">
+            <source src="Local da imagem/imagem.mp4" type="video/mp4">
+            <source src="Local da imagem/imagem.ogv" type="video/ogg">            
+          </video>
+
+            <!--              Adicionando video externo           -->
+
+O vídeo externo pode ser pego no youtube, vimeo e outro. Mas para "pegar" é só clicar em complartilhar -> Incorporar -> copiar depois só colar na tela/local.
+
+            <!--            Imagem dinamica/flexivel              -->
+
+          <picture>
+            <source media="(max-width: 750px )" srcset="">
+          </picture>
+
+
+
+
+
+
+                      <!--          CSS3                -->
+
+O estilo "style" é baseado em seletores.
+Depois do <title></title> por o estilo local criando a TAG <style></style> dentro dela tudo vai ser considerado CSS.
+
+<Style>
+      body {
+        background-color: lightblue;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+      }
+
+      h1 {
+        color: darkblue;
+        background-color: rgb(92, 58, 245);
+      }
+
+      h2 {
+        color: darkred;
+      }
+      
+      p {
+        text-align: justify;
+      }
+</Style>
 
 
 
