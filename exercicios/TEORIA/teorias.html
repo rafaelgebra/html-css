@@ -300,7 +300,7 @@ O vídeo externo pode ser pego no youtube, vimeo e outro. Mas para "pegar" é s�
                       <!--          CSS3                -->
 
 O estilo "style" é baseado em seletores.
-Depois do <title></title> por o estilo local criando a TAG <style></style> dentro dela tudo vai ser considerado CSS.
+Depois do <title></title> por o <!-- estilo local --> criando a TAG <style></style> dentro dela tudo vai ser considerado CSS.
 
 <Style>
       body {
@@ -323,10 +323,101 @@ Depois do <title></title> por o estilo local criando a TAG <style></style> dentr
       }
 </Style>
 
+          <!--      Estilos extermos      -->
+
+Para não ficar preparando cada estilo individualmente por página pode ser usado o <!-- estilo externos -->.
+
+Par criar um estilo externo, na pagina principal criar em baixo da TAG <title></title> a TAG <link rel="stylesheet" href="style.css">. o "nome" do link pode ser editado ou escolhido conforme a nescessidade.
+
+1 - Para criar de forma fácil uma nova página só segurar a tecla Ctrl e clicar no caminho da nova página.
+
+2 - É importante por em todas as páginas o link <link rel="stylesheet" href="style.css">
+
+3 - Para evitar incompatibilidade na página <!-- estilo externo --> escrever o seguinte parametro/regra no inicio da página @charset"UTF-8"
+
+4 - Pode ser usado mais de um link para o css
+
+Mesmo com o estilo "style" sendo usado de forma interna ou externa também tem a opção de usar em linha "inline"
+
+A ordem de prioridade é:
+
+1º -> Inline.
+2º -> Local.
+3º -> Externo.
+
+                <!--        Modulo 2 HTML + CSS          -->
+
+Para digitar uma cor, usar o parametro # na frente. Para por a cor em RGB -> rgb(0, 0, 255);
+
+                <!--        Psicologia das cores         -->
+
+Cores primarias é (Amarelo, vermelho, Azul).
+
+Cores secundarias é (laranja, Violeta, Verde).
+
+Cores Tercearias é (Amarelo-esverdeado, Amarelo-alaranjado, Vermelho-alaranjado, Vermelho-arroxeado, Azul-arroxeado, Azul_esverdeado).
 
 
+                <!--       Usando o EFEITO (gradient)       -->
 
+Esse efeito é para dar cor no fundo de forma degrade background-color:linear - gradient("Aqui dentro a primeira coisa que tem que ser feita é informar a direção, depois as cores").
 
+1 - Usando o efeito gradient para deixar o efeita para a direita - background-image(to right) ou (90deg).
+            background-image:linear-gradient (to right, white, blue)
+
+2 - Pode ser usado uma configuração global no CSS * dentro do <style></style>            
+            <style>
+                *{
+                    height: 100%; /* significa altura*/ 
+                }   
+            </style>
+
+3 - Para fixar a tela (gradient) dentro de "style".
+                background-attachment:fixed
+
+            <style>
+                body {
+                    background-image: linear-gradient(to top, #4FFFDC, #3FCC80);
+                    background-attachment: fixed;
+                }
+            </style>
+
+4 - Para ajustar alguns ou todos os paragrafos pode usar o parametro text-align:justify            
+
+                  <!--     EXEMPLO DE PAGINA EXTERNA #style.css       -->
+
+@charset"UTF-8";
+            <style>
+              * {
+                font-family:Arial, Helvetica, sans-serif;
+              }
+              body {
+                background-image: linear-gradient(to top, #A68C6D, #F2D7B6);/* Para fazer fazer degrade */
+                background-attachment: fixed;
+              }
+              main {
+                background-color: white;
+                box-shadow: 5px 5px 15px #41201dc7; /* Isso é para dar o efeito de sombra nas bordas( dentro das laterais/Width*/
+                border-radius: 10px; /* Para dar efeito de arredondamento nas bordas*/
+                width: 600px; /* Largura. Isso é para ajustar */
+                padding: 10px; /* Acolchoamento ( Isso é um espaço dentro do Width) nas laterais */
+                margin: auto; /* Centralizar o texto ( a opção AUTO faz com que sejá centralizado de forma automatica, independente do tamanho da tela */
+              }
+              h1 {
+                color: #592C28; /* Cor da letra no h1*/ 
+                text-align: center; /* Centraliza o texto dentro do h1*/
+                text-shadow: 1px 1px 2px #2e171593;
+              }
+              h2 {
+                color: #b36643; /* Alterar a cor da letra*/
+                text-align: center; /* Centraliza o texto dentro do h2*/
+              }
+              p {
+                text-align: justify; /* Ajusta o paragrafos*/
+                color: black; /* Altera a cor dos paragrafos*/
+              }
+
+            </style>
 
 
 Essa tearia começa no capitulo 17.
