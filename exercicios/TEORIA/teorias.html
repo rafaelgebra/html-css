@@ -387,7 +387,7 @@ Esse efeito é para dar cor no fundo de forma degrade background-color:linear - 
                   <!--     EXEMPLO DE PAGINA EXTERNA #style.css       -->
 
 @charset"UTF-8";
-            <style>
+
               * {
                 font-family:Arial, Helvetica, sans-serif;
               }
@@ -417,7 +417,71 @@ Esse efeito é para dar cor no fundo de forma degrade background-color:linear - 
                 color: black; /* Altera a cor dos paragrafos*/
               }
 
-            </style>
+                <!--           CSS TIPOGRAFIA   CAP 14          -->
+
+                  body {
+                    font-family: Arial, Helvetica, sans-serif;
+                    /*
+                    Medidas Absolutas
+                    cm, mm, in, px, pt, pc
+                                px é o recomendado pela W3C
+
+                    Medidas Relativas.
+                    em, ex, rem, vw, vh, isso é em %
+                    em é o recomendado pela W3C
+
+                    16px é o mesmo que 1em
+                    */
+                    font-size: 1em;
+                  }
+
+                  <!--        Declaração sobre fonte          -->
+
+Peso -> é a letra mais gordinha e mais leve.
+              Peso da fonte é usado a TAG font-weight; <!-- lighten, normal, bold, bolder --> 
+
+Itálico -> A letra um pouco inclinada.
+              O comando font-style; <!--  normal, italic   -->
+
+sublinhado -> Poe uma risco em baixo da frase.
+              O comando test-decoration; <!-- underline -->
+
+<style>
+  h1 {
+    font-family: 'work Sans' sans-serif;
+    font-weight: bolder;
+    font-size: 3em;
+    font-style: italic;
+  }
+
+  Rara abreviar/simplificar e ganhar tempo pode sr feito assim.
+
+  h1 {font: italic border 3em 'work Sans' sans-serif,
+  }
+</style>
+
+                <!--        Importação de FONTES        -->
+
+Para fazer a importação de fonte para o CSS tem que por ->  @import 
+
+1 - Tudo que começa com @ no CSS tem que ser posto dentro de <style></style> e nas primeiras linhas e fora de um seletor
+                <style>
+                    @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+                    h1 {
+                        font-family: 'Kaushan Script', cursive;
+                    }
+
+                </style>
+
+                
+
+
+
+
+
+
+
 
 
 Essa tearia começa no capitulo 17.
