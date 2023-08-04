@@ -465,26 +465,236 @@ sublinhado -> Poe uma risco em baixo da frase.
 Para fazer a importação de fonte para o CSS tem que por ->  @import 
 
 1 - Tudo que começa com @ no CSS tem que ser posto dentro de <style></style> e nas primeiras linhas e fora de um seletor
-                <style>
-                    @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
-                    h1 {
-                        font-family: 'Kaushan Script', cursive;
-                    }
+                h1 {
+                    font-family: 'Kaushan Script', cursive;
+                }
+            </style>
 
-                </style>
+            <!--             font-face              -->
+            <style>
+              @font-face {
+                font-family: /* Escolher/Criar o nome */;
+                src: url(fonts/filxgirl.ttf); /* Achar/Encontrar o local da font */
+                font-weight: normal; /* Pasta fonts -> nome do arquivo*/
+                font-style: italic; /* Fica a escolha*/ 
+              }
+            </style>
 
-                
+              <!--          Captura/Descobrir qual é a fonte usada        -->
+
+Uma das formas é usar uma extenções (fonts Nunja)
+
+              <!--          Identificar fonte dentro da imagem            -->
+
+1 -> Whatfonts.com
+2 -> Fontsquirrel.com
+3 -> MyFonts.com
+
+              <!--          Alinhamento de texto          -->
+
+<style>
+  body {
+    font:normal 16px Arial, Verdana, serif;
+    text-align: left;
+  }
+  h1 {
+    text-align: center;
+  }
+  h2 {
+    text-align: center;
+  }
+  p {
+    text-align: justify;
+    text-indent: 30;
+  }
+</style>
+
+            <!--          Seletores personalizados          -->
+
+Isso é um seletor persolanizado <h1 id="principal"></h1>
+          O id é a identificação; para diferenciar dos outros, dessa forma consegue personalizar.
+          Para identificar dentro do <style></style> fazer da seguinte forma -> h1 #principal.
+                                            h1  -> para identidicar/localizar a posição.
+                                            #   -> identificação do id.
+                                            ""  -> por o nome de identificação.
+          em HTML é id    = em CSS #
+          em HTML é class = em CSS .
+
+id      -> só pode um elemento por doc HTML
+class   -> pode vários elementos
 
 
+            <!--              Pseudo-Classes  :          -->
+
+Pseudo-classe é representado por :
+Pseudo-classes é relacionada ao ESTADO do elemento.
+
+height: altura
+width: largura
+
+  EX:
+    <style>
+      div {
+        display: inline-block;
+        background-color: lightgray;
+        border: 1px solid black;
+        text-align: center;
+        height: 200px;
+        width: 200px;
+      }
+      div:hover {
+        background-color: yellow;
+      }
+    </style>
 
 
+Para "destacar" uma palavra no meio de alguma frase pode usar a TAG <span></span>.
+
+1 - <div></div> é um espaço qualquer/vazio
+
+2 - O simbolo > significa que o "paragrafo"  é filho da div
+      Ex:
+          <style>
+              div > p {
+                  display: none;
+              }
+              div:hover > p {
+                  display: block;
+                  color: black;
+                  background-color: red;
+                  width: 300px;
+                  
+              }
+          </style>
+
+                <!--          Box model e tipos          -->
+
+height  -> altura
+width   -> comprimento
+                            
+O culpa a linha inteira.
+Para iniciar um box-level ele não começa um mesma linha.
+É independente.
+
+Exemplos de box-level:
+      <div></div>
+      <h1></h1> até <h6></h6>
+      <p></p>
+      <main></main>
+      <header></header>
+      <nav></nav>
+      <article></article>
+      <aside></aside>
+      <footer></footer>
+      <form action=""></form>
+      <video src=""></video>
+
+Exemplos de inline-level:
+      <span></span>
+      <a href=""></a>
+      <code></code>
+      <small></small>
+      <strong></strong>
+      <em></em>
+      <sup></sup>
+      <sub></sub>
+      <label for=""></label>
+      <button></button> todos
+      <input> todos
+      <select name="" id=""></select>
 
 
+              <!--           display:block é um Box-Level.         --->
+
+<style>
+  h1 {
+    /* Simplicar Border fica -> border: 10px solid red; IMPORTANTE SEGUIR A SEGUÊNCIA.*/
+    border-width: 10px;
+    border-style: solid;
+    border-color: red;
+  }
+  h2 {
+    /* Simplificando o padding -> padding: 10px 10px 10px 10px: 
+    IMPORTANTE se os quatro forem os mesmos valores, pode deixar só um 10px*/
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+  }
+  h3 {
+    /*Simplificando a margin -> margin: auto;*/
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10;
+  }  
+  h4 {
+    /* Simplificando o outline -> outline: 10px solid red;*/
+    outline-width: 10px;
+    outline-style: solid;
+    outline-color: red;
+  }
+</style>
+
+Todas essas TAGs abaixo é uma DIV. Adiferença é para os sites de busca. 
+        
+        header      -> cabeçalho
+        main        -> principal/corpo/conteudo
+        footer      -> rodapé
+        nav         -> navegação
+        section     -> seções   
+               
+
+          <!--                    Sombra                      -->
+
+A forma mais facíl que existe de fazer é seguir a seguinte configuração e depois ir ajustando.
+  box-shadow:1px 1px 4px 1px back
+  <style>
+    h1 {
+      box-shadow: 1px 1px 4px 1px black;
+    }
+  </style>
+
+          <!--        Vértices aredondados -> Caixas        -->
+
+Se tudas as bordas forem iquais pode fazer simplificado -> border-radius: 20;
+
+  <style>
+    h1 {
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+    }
+  </style>
+Quando se fala em border-radius, as dimenções pode ser feita em %
+  EX:
+      <style>
+          h1 {
+              border-radius: 5%;
+          }
+      </style>
+
+            <!--        Bordas personalizadas/decoradas         -->
+          
+      EX:
+        <style>
+          h1 {
+            border:12px solid black;
+            padding: 10px;
+            border-image-source: url('borda.png');
+            border-image-slice: 27;
+            border-image-repeat: repeat; 
+            /* Semplificado */
+            border-image: url('borda.png') 27 repeat;
+          }
+        </style>
 
 
-
-Essa tearia começa no capitulo 17.
+    <!--        Essa tearia começa no capitulo 17. -->
 
 recapitulando e fazendo na pratica um projeto.
 
@@ -534,11 +744,13 @@ EX:
 
 para alterar o símbolo de uma lista seguir o comando:  
 
-        ul {
-          list-style-type: '\2714\0020\0020';
-          columns: 2;
-          list-style-position: inside;
-        }
+        <style>
+          ul {
+            list-style-type: '\2714\0020\0020';
+            columns: 2;
+            list-style-position: inside;
+          }
+        </style>
 
         A primeira linha de declaração faz com que o marcador seja persolanidado com o parâmetro list-style-type. O valor \2714 corresponde ao símbolo que tem o código Unicode U+2714. O valor \0020 corresponde a um espaço em branco
         A segunda declaração indica a quantidade de colunas.
@@ -551,34 +763,83 @@ Ajudar na leitura.
 
 
 Exemplo de como ajustar video do youtube 
-
-        div.video {
-          background-color: var(--cor4);
-          margin: 0px, -20px -30px -20px;
-          padding: 10px;
-          padding-bottom: 55%;
-          position: relative;
-
-        }
-
-        div.video > iframe {
-          position: absolute;
-          top: 5%;
-          left: 5%;
-          width: 90%;
-          height: 90%;
-
-        }
+        <style>
+  
+          div.video {
+            background-color: var(--cor4);
+            margin: 0px, -20px -30px -20px;
+            padding: 10px;
+            padding-bottom: 55%;
+            position: relative;
+  
+          }
+  
+          div.video > iframe {
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            width: 90%;
+            height: 90%;
+  
+          }
+        </style>
 
         Vercionamento de Software.
 
 
-          Capitulo 18.
+          <!--            Capitulo 18           -->
 
 Git = Repositorio Local.
 GitHob = Repositorio Remoto.
 
-          Capitulo 20-
+          <!--            Capitulo 19             -->
+
+Trabalhando com Imagem de fundo -> background
+
+        <style>
+          body{
+            background-image: url('Local da imagem');
+            background-repeat: no-repeat; /* Também tem as seguntes opções -> repeat, repeat-x, repeat-y */
+          }
+
+          div.quadrado {
+            display: inline-block;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: lightgrey;
+            width: 300px;
+            height: 300px;
+          }
+          div#q1 {
+            background-color: skyblue;
+          }
+          div#q2 {
+            background-image: linear-gradient(to bottom, yellow, red);
+          }
+          div#q3 {
+            background-position: left top; /* Também tem as seguintes opções -> left center, right center, right bottom e outras*/
+          }
+        </style>
+
+          <!--                       background-size                         -->
+
+          <style>
+            body{
+              background-color: black;
+              background-image: url('Aqui vai o endereço');
+              background-position: center center;
+              background-repeat: no-repeat;
+              background-size: cover;
+               /* A função background-size.
+                A opção 'cover', faz com que a imagem sejá "adaptavel" com corte da imagem (preenxe a "a tela inteira")
+                A opção 'contain', faz com que a imagem sejá "adaptavel" sem cortar da imagem (imagem "aumenta e diminue")
+                A opção 'auto', o navegador exibe a imagem conforme a sua "vontade (navegador)". Quando se remove a opçao auto
+                pode por os parametros em % e px.
+               */
+            }
+          </style>
+
+          <!--            Capitulo 20-          -->
           
           Letras maiusculas
 
@@ -593,13 +854,12 @@ Dica - font-variant: small-caps;/*Deixa todas a letras maiusculas porém as prim
   --font3: 'Sriracha', cursive;
 }
 
-        Capitulo 21 - Tabelas
+        <!--            Capitulo 21 - Tabelas               -->
 
-A ESTRUTURA de site não pode ser feito com base uma tebela.
+A ESTRUTURA de site não pode ser feito com base uma tabela.
 A tabela é usada para tabular dados.
 
 TAG <table></table> <!--Limita o tamanha da tabela-->
-
 
 
 <!--
