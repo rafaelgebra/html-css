@@ -49,5 +49,39 @@
                     h1 {
                         font-family: 'Kaushan Script', cursive;
                     }
-
                 </style>
+
+16 - Para "destacar" uma palavra no meio de alguma frase pode usar a TAG <span></span>.
+
+17 - <div></div> é um espaço qualquer/vazio
+
+18 - O simbolo > significa que o "paragrafo"  é filho da div
+                Ex:
+                    <style>
+                        div > p {
+                            display: none;
+                        }
+                        div:hover > p {
+                            display: block;
+                            color: black;
+                            background-color: red;
+                            width: 300px;
+
+                        }
+                    </style>
+
+19 - Todas essas TAGs abaixo é uma DIV. Adiferença é para os sites de busca. 
+        
+        header      -> cabeçalho
+        main        -> principal/corpo/conteudo
+        footer      -> rodapé
+        nav         -> navegação
+        section     -> seções   
+
+20 - Quando se fala em border-radius, as dimenções pode ser feita em %
+    EX:
+        <style>
+            h1 {
+                border-radius: 50%;
+            }
+        </style>
