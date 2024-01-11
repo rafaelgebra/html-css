@@ -399,27 +399,27 @@ Cores Tercearias é (Amarelo-esverdeado, Amarelo-alaranjado, Vermelho-alaranjado
 
 Esse efeito é para dar cor no fundo de forma degrade background-color:linear - gradient("Aqui dentro a primeira coisa que tem que ser feita é informar a direção, depois as cores").
 
-1 - Usando o efeito gradient para deixar o efeita para a direita - background-image(to right) ou (90deg).
-            background-image:linear-gradient (to right, white, blue)
+      1 - Usando o efeito gradient para deixar o efeita para a direita - background-image(to right) ou (90deg).
+                  background-image:linear-gradient (to right, white, blue)
 
-2 - Pode ser usado uma configuração global no CSS * dentro do <style></style>            
-            <style>
-                *{
-                    height: 100%; /* significa altura*/ 
-                }   
-            </style>
+      2 - Pode ser usado uma configuração global no CSS * dentro do <style></style>            
+                  <style>
+                      *{/*Com essa configuração todo a pagina que usar esse style fica com essa configutação global*/
+                          height: 100%; /* significa altura*/ 
+                      }   
+                  </style>
 
-3 - Para fixar a tela (gradient) dentro de "style".
-                background-attachment:fixed
+      3 - Para fixar a tela (gradient) dentro de "style".
+                      background-attachment:fixed
 
-            <style>
-                body {
-                    background-image: linear-gradient(to top, #4FFFDC, #3FCC80);
-                    background-attachment: fixed;
-                }
-            </style>
+                  <style>
+                      body {
+                          background-image: linear-gradient(to top, #4FFFDC, #3FCC80);
+                          background-attachment: fixed;
+                      }
+                  </style>
 
-4 - Para ajustar alguns ou todos os paragrafos pode usar o parametro text-align:justify            
+      4 - Para ajustar alguns ou todos os paragrafos pode usar o parametro text-align:justify            
 
                   <!--     EXEMPLO DE PAGINA EXTERNA #style.css       -->
 
