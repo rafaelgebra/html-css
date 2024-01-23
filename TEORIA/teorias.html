@@ -472,39 +472,49 @@ Esse efeito é para dar cor no fundo de forma degrade background-color:linear - 
                     font-size: 1em;
                   }
 
-                  <!--        Declaração sobre fonte          -->
+                  <!--        Declaração sobre fonte - A famila da fonte tem que ter essas configurações     -->
 
 Peso -> é a letra mais gordinha e mais leve.
-              Peso da fonte é usado a TAG font-weight; <!-- lighten, normal, bold, bolder --> 
+                                   <!--   font-weight:;    -->
+              Peso da fonte literal = font-weight: <!-- lighten, normal, bold, bolder --> ;
+              Peso da fonte númerodo = font-weight: <!-- 100, 200, 300 até 900 "Não é todos que tem essa quantidade de peso númerico"-->
 
 Itálico -> A letra um pouco inclinada.
+                                  <!--    font-style:;     -->
               O comando font-style; <!--  normal, italic   -->
 
 sublinhado -> Poe uma risco em baixo da frase.
+                                  <!--    test-decoration:;   -->
               O comando test-decoration; <!-- underline -->
 
-<style>
+
+
+<style> 
   h1 {
     font-family: 'work Sans' sans-serif;
     font-weight: bolder;
     font-size: 3em;
     font-style: italic;
   }
-
-  Para abreviar/simplificar e ganhar tempo pode ser feito assim.
   
 </style>
+            <!--Para abreviar/simplificar e ganhar tempo pode ser feito assim.-->
 
+  Isso é uma shorthand.
+  A seguência de uma shorthand é -> <!--font-style, font-weight, font-size, font-family-->
+
+<style>
   h1 {
     font: italic border 3em 'work Sans' sans-serif,
   }
-
+</style>
 
                 <!--        Importação de FONTES        -->
 
 Para fazer a importação de fonte para o CSS tem que por ->  @import 
 
 1 - Tudo que começa com @ no CSS tem que ser posto dentro de <style></style> e nas primeiras linhas e fora de um seletor
+Opções de fontes do google fonts é importado assim:
             <style>
                 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
