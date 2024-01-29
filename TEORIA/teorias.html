@@ -531,11 +531,34 @@ Opções de fontes do google fonts é importado assim:
                 font-weight: normal; /* Pasta fonts -> nome do arquivo*/
                 font-style: italic; /* Fica a escolha*/ 
               }
+
+              h1{
+                font-family: /*O nome da fonte escolhida no @font-face*/;
+              }
+
             </style>
+
+                          <!-- EXEMPLO PRATICO  -->
+
             <style>
               @font-face {
                 font-family: Love;
-                src: url();
+                src: url(fonts/love_larry/love\ larry\ ttf.ttf) format(truetype), url() format();
+                
+                /*Type format
+                - opentype              (otf)
+                - truetype              (ttf)
+                - embedded-opentype
+                - truetype-aat - o aat seginifica (Apple Advenced ty)
+                - svg
+                
+                */
+                font-weight: normal;
+                font-style: italic;
+              }
+
+              h1{
+                font-family: Love;
               }
             </style>
 
