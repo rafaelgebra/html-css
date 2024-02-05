@@ -24,12 +24,21 @@ main {
 .segundo {
     color: blue;
 }
+
+div{
+    height: 30px;
+}
+
 div > p {
     display: none;
+    
 }
 div:hover > p {
-    display: block;
+    display: inline;
+    /*display: block; Com essa opção o display fica em baixo*/
+    
     color: black;
     background-color: white;
     width: 200px;
+    
 }
