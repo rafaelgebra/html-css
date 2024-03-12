@@ -3,9 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tabela</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <style>
+        table {
+            width: 300px;
+            border-collapse: collapse;/*Se retirar DESCOLA as linhas da tabelas */
+            border: 2px solid red;
+            margin: 10px;
+            padding: 10px;
+        }
+        td {
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Minha primeira tabela</h1>
+    <!--
+        Hierarquia da TABELA (simples)
+
+        TABLE = tabela
+            TABLE ROW = Linha de tabela                 = tr
+                TABLE HEADER = cabeçalho de tabela      = th
+                TABLE DATA = dado de tabela             = td
+
+    -->
+    <table>
+        <tr>
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr>
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr>
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+
+    </table>
+
+
+
+
 </body>
 </html>
