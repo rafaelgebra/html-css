@@ -7,7 +7,8 @@
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <style>
         table {
-            width: 300px;
+            width: 300px; 
+            height: 300px;
             border-collapse: collapse;/*Se retirar DESCOLA as linhas da tabelas */
             border: 2px solid red;
             margin: 10px;
@@ -16,8 +17,16 @@
         td {
             border: 1px solid black;
             padding: 5px;
-            text-align: center;
+            text-align: center; /* Alinhamento horizontal */
+            vertical-align: middle;/*Alinhamento vertical "no centro é middle"*/
         }
+
+        .numero {
+            text-align: left;
+            vertical-align: top;
+
+        }
+
     </style>
 </head>
 <body>
@@ -40,12 +49,12 @@
         <tr>
             <td>A2</td>
             <td>B2</td>
-            <td>C2</td>
+            <td class="numero">C2</td>
         </tr>
         <tr>
             <td>A3</td>
             <td>B3</td>
-            <td>C3</td>
+            <td class="numero">C3</td>
         </tr>
         <tr>
             <td>A4</td>
