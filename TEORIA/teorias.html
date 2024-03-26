@@ -1150,3 +1150,27 @@ Não é em todos os lugares que da para usar o iframe, e não é sem por cento s
 
 <!--            Aula 3 - Conteúdo local no iframe         -->
 
+    Em vez de colocar uma URL externa, pode colocar uma página "URL" interna. 
+
+<!--            Aula 4 - Navegação no inframe           -->
+Importânte ressaltar que no iframe tem que tem um name="", assim como no exemplo a baixo. Isso serve de identificação para as páginas para o target="". 
+        Aplicação = target="frame".
+                    name="frame"
+
+    Ex:
+
+    <body>
+      <h1>Faça uma escolha</h1>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae ratione cum ex et doloribus repellendus temporibus aliquid. Deserunt laboriosam iusto ipsam sequi, neque recusandae natus eum molestias odit libero? A?</p>
+      
+      <ul>
+          <li><a href="paginas-extras/pag001.html" target="frame">Primeira página</a></li>
+          <li><a href="paginas-extras/pag002.html" target="frame">Segunda página</a></li>
+          <li><a href="paginas-extras/pag003.html" target="frame">Terceira página</a></li>
+      </ul>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam dolore eos quam commodi placeat facilis voluptates alias tempora ut consequatur consectetur ex, molestiae voluptas neque vel, eligendi eum suscipit blanditiis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos ex modi, iusto officiis aperiam voluptatum minus vitae, consequatur deserunt vero id cupiditate esse, tenetur officia. Ducimus illum perferendis nesciunt fugiat!</p>
+
+      <iframe src="" id="tela" name="frame">
+          <p>Infezmente seu navegador não é compatível com isso.</p>
+      </iframe>
+    </body>
