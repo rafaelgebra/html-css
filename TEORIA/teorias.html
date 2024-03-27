@@ -1174,3 +1174,53 @@ Importânte ressaltar que no iframe tem que tem um name="", assim como no exempl
           <p>Infezmente seu navegador não é compatível com isso.</p>
       </iframe>
     </body>
+
+    <!--        Aula 5 - Conteúdo no iframe por código     -->
+
+    Colocando conteúdo extatico INICIAL dentro do iframe
+    Novo parametro srcdoc="". 
+     pode por o código basico nas é bem limitado. isso é usado quando não quer carregar outra pádinha 
+
+      Ex: de iframe. Não é muito usado.
+
+      <body>
+        <h1>Faça uma escolha</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae ratione cum ex et doloribus repellendus temporibus aliquid. Deserunt laboriosam iusto ipsam sequi, neque recusandae natus eum molestias odit libero? A?</p>
+        
+        <ul>
+            <li><a href="paginas-extras/pag001.html" target="frame">Primeira página</a></li>
+            <li><a href="paginas-extras/pag002.html" target="frame">Segunda página</a></li>
+            <li><a href="paginas-extras/pag003.html" target="frame">Terceira página</a></li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam dolore eos quam commodi placeat facilis voluptates alias tempora ut consequatur consectetur ex, molestiae voluptas neque vel, eligendi eum suscipit blanditiis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos ex modi, iusto officiis aperiam voluptatum minus vitae, consequatur deserunt vero id cupiditate esse, tenetur officia. Ducimus illum perferendis nesciunt fugiat!</p>
+    
+        <iframe src="" id="tela" name="frame" srcdoc="<h1>Escolha uma das poções acima</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem corporis sed et enim possimus a vero praesentium facilis accusantium pariatur, libero odit. Corrupti tempore nisi deserunt ducimus sequi blanditiis nesciunt.</p><img src='image/cursoemvideo.png'>">
+            <p>Infezmente seu navegador não é compatível com isso.</p>
+        </iframe>
+    </body>
+    </html>
+
+
+<!--        Aula 6 - Incovenientes do iframe      -->
+
+    O iframe é muito útil, mas também não é a solição para todos os problemas
+
+<!--        Aula 7 - Tornando iframe mais seguro      -->
+
+
+    Como usar iframe e deixar mais seguro o site.
+    Para ter mais segurança usar a "casadinha" sandbox="sandbox" e referrerpolicy="no-referrer".
+      O atributo sandbox com o valor "sandbox" não "deixa" capturar num uma informação pelo iframe, teoricamente a segurançano maximo. Mas tem como desabilitar algumas seguranças alterando o valor de dentro das "".
+        Se esta dentro do mesmo servidor pode usar o valor "allow-same-origin (depois do espaço pode por outras configurações)"
+
+      O parametro referrerpolicy "POLITICA DE TEFERENÇIA" isso não deixa que o que esta dentro do iframe colete informações do usuario.
+
+      <body>
+          <h1>Meu site principal</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil cum eaque fugit mollitia, iste deleniti veritatis, esse doloremque fuga consequatur nesciunt, vitae deserunt ex est animi. Nihil possimus quasi ex.</p>
+          <iframe src="paginas-extras/pag004.html" sandbox="sandbox" referrerpolicy="no-referrer">
+              <p>Seu navegador não é compatível com isso.</p>
+          </iframe>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius inventore eum at consequatur sapiente incidunt optio fuga cumque id nostrum, voluptates qui culpa voluptas recusandae alias tempore? Quod, consequatur voluptate.</p>
+      </body>
+      </html>
