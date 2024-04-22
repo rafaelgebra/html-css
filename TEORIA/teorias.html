@@ -1238,4 +1238,44 @@ Importânte ressaltar que no iframe tem que tem um name="", assim como no exempl
 <!--            Módulo 4, Capítulo 23 Aula 1        -->
       Novo projeto - PROJETO SOCIAL
 
-      
+<!--            Capítulo 24 - FORMULÁRIOS         -->
+
+        Para remover a autocomplete só usar dentro de <form></form> o autocomplete="off"
+            <form action="cadastro.php" autocomplete="off"></form>
+
+      <!--          Usando label       -->]
+
+      Inicio de como fazer formulários
+        importando fazer um ligação com o <label></label>.
+
+    Ex:
+
+      <form action="cadastro.php" autocomplete="off">
+        <p>
+            <label for="inome">Nome:</label> <input type="text" name="nome" id="inome">
+        </p>
+        <p>
+            <label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome"> 
+        </p>
+        <p>
+            <input type="submit" value="ENVIAR">
+        </p>
+      </form>
+
+        <!--      Metodos de envios de formulários      -->
+
+        Existe dois tipos de envios:
+
+        padrão é o GET.
+          Quando não precisa de segurança e precisa que a URL sejá complartilhavel usar o metodo GET.
+
+            Um detalhe - quando envia DADOS pelo metodo GET só pode usar no maximo 3000 bits
+
+        Não Padão POST:
+
+          Quando é sensivel (senha, endereço ...) dai usar o POST, para mais segurança usar o HTTPS//
+            
+            Um detalhe - Quando enviar DADOS pelo metodo POST pode usar mais de 3000 bits. 
+
+
+        <!---         Caixa de texto e de senha         -->
