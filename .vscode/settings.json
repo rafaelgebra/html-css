@@ -1,4 +1,23 @@
 {
+    "files.saveConflictResolution": "overwriteFileOnDisk",
+    "workbench.startupEditor": "none",
+    "diffEditor.wordWrap": "on",
     "editor.wordWrap": "on",
-    "php.validate.executablePath": "c:/php/php.exe"
+    "settingsSync.ignoredSettings": [
+        "application.shellEnvironmentResolutionTimeout"
+    ],
+    "workbench.preferredDarkColorTheme": "Visual Studio Dark",
+    "workbench.preferredHighContrastLightColorTheme": "Default High Contrast",
+    "editor.fontSize": 12,
+    "files.autoSave": "afterDelay",
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "explorer.confirmDelete": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveServer.settings.donotVerifyTags": true,
+    "git.enableSmartCommit": true,
+    "workbench.colorTheme": "Dracula At Night",
+    "php.validate.executablePath": "C:/xampp/php/php.exe"
 }
