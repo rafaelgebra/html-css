@@ -1280,7 +1280,6 @@ Importânte ressaltar que no iframe tem que tem um name="", assim como no exempl
 
         <!---         Caixa de texto e de senha         -->
 
-
   <body>
     <h1>Teste de Formulário</h1>
     <form action="cadastro.php" method="post" autocomplete="on">
@@ -1303,7 +1302,6 @@ Importânte ressaltar que no iframe tem que tem um name="", assim como no exempl
 </html>
 
     ----------------- > Exemplo 2 de Caixa de senha e texto "Com maior segurança"
-
 
   <!DOCTYPE html>
   <html lang="pt-br">
@@ -1333,7 +1331,7 @@ Importânte ressaltar que no iframe tem que tem um name="", assim como no exempl
   </body>
 </html>
 
-      <!--  Elementos - number, month, date e time em formulários HTML  -->
+      <!--  Capítulo 24 Aula 07 - Elementos - number, month, date e time em formulários HTML  -->
 
     <!DOCTYPE html>
     <html lang="pt-br">
@@ -1414,3 +1412,44 @@ Importânte ressaltar que no iframe tem que tem um name="", assim como no exempl
           
       </body>
       </html>
+
+  --------- > O fieldset = Gruoo de campos. da para por uma tag legend para "agrupar" os "campos".
+
+
+<!--         Capitulo 24 Aula 08 Checkbox r Radio button      -->
+
+      <!DOCTYPE html>
+      <html lang="pt-br">
+      <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Formulário</title>
+          <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+      </head>
+      <body>
+          <h1>Exemplo de Fromulário</h1>
+          <form action="cadastro.php" method="get"> <!-- com o method post fica mais "seguro"-->
+              <fieldset>
+                  <legend>Sexo</legend><!-- button do tipo radio só pode escolher um deles-->
+                  <input type="radio" name="sexo" id="isxmas" value="M"><label for="isxmas">Masculino</label> <br>
+                  <input type="radio" name="sexo" id="isxfem" value="F" checked ><label for="isxfem">Feminino</label> <!-- Para deixar marcado uma opção da lista dentro do input por a TAG checked = marcado -->
+                  <!-- Quando é usado o input do tipo radio, dentro de todos os nome="" tem que ter o mesmo nome, para ter como selecionar as outras opções senão fica travado.-->
+              </fieldset>
+              <fieldset>
+                  <legend>Esportes favoritos</legend> <!-- O button do tipo checkbox pode selecionar mais de uma opção e também pode deixar a TAG checked em quantos quiserem-->
+                  <input type="checkbox" name="esbas" id="iesbas"> <label for="iesbas">Basquete</label> <br>
+                  <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label> <!-- Com a opcão do label o nome fica vinculado ao quadrado então fica clicavel. --> <br>
+                  <input type="checkbox" name="esnat" id="iesnat"> Natação <!-- nessa forma de escrever o nome do campo "sem o label funciona mas, tem que clicar no quadrado para celecionar"--> <br>
+                  <input type="checkbox" name="esten" id="iesten"> Tênis
+              </fieldset>
+
+              <p>
+                  <input type="submit" value="Enviar">
+                  <input type="reset" value="Limpar">
+              </p>
+          </form>
+      </body>
+      </html>
+
+<!--           Capítulo 24 Aula 09 - Elementos color, range e feli em HTML            -->
+
