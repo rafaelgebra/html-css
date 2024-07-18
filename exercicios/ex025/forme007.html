@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="post">
+        <label for="iest">Estado: </label><!-- label elemento-->
+        <select name="estado" id="iest">
+            <option value="" selected> ---- Escolha o Estado ----</option><!-- Com essa opção ativado consegui deixar mais bonito visualmente mas tem a desvantagem de pesquisar\digitar-->
+            <optgroup label="Região Suldeste"><!-- label atributo--><!-- Com o label consegue fazer a separação, nesse exemplo esta reparado por região-->
+                <option value="MG">Minas Gerais</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="SP">São Paulo</option>
+            </optgrup>
+
+            <optgroup label="Região Nordeste"><!-- label atributo--><!-- Com o label consegue fazer a separação, nesse exemplo esta reparado por região-->
+                <option value="MA">Maranhão</option>
+                <option value="PE">Pernambuco</option>
+                <option value="RN">Rio Grande do Norte</option>
+            </optgroup>
+        </select>
+        <p>
+            <label for="iprof">Profissão: </label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof"> <!-- Para mostrar como lista dentro do input tem que vincular, usando o atributo id="" dentro da datalist e dentro do input  usar o atributo list="" com o mesmo nome. -->
+                <option value="ADm">Administrador</option>
+                <option value="CONT">Contabilista</option>
+                <option>Desenvolvedor</option>
+                <option>Professor</option><!-- Se tirar a opção value não vai aparecer na lista o conteudo-->
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">Mensagem: </label><br><!-- è para o cliente\pessoa enviar uma mensagem para o "SITE"-->
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="--Digiete sua mensagem--"></textarea> <!-- com o placeholder pode deixar uma mensagem de aviso-->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+
+    
+</body>
+</html>
