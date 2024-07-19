@@ -11,26 +11,22 @@
     <form action="cadastro.php" method="get" autocomplete="on">
         <p>
             <label for="iano">Em que ano você nasceu? </label>
-            <input type="number" name="ano" id="iano" min="1900" max="2024" required oninput="iidade.innerHTML = Number(2024) - Number(iano.value)">
-            <input type="number" name="ano2" id="iano2" min="1900" max="">
-
-
+            <input type="number" name="ano" id="iano" min="1900" required oninput="CalcIdade()" placeholder="1900"> <!-- o placeholder é para colocar uma "valor temporario no campo do input" depois que começa a colocar o valor ele some-->
+            
         </p>
         <p>
             <label for="iidade">Sua idade é: </label>
-            <output name="idade" id="iidade">0</output>
+            <output name="idade" id="iidade">0</output> <!-- com o output para da para "trabalhar com o javaScript"-->
         </p>
-
-
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </p>
     </form>
-    <script>
+    <script>// Isso é um JavaScript Uma função para pegar a data atual e fazer a subtração com o ano de nascimento, mostrando a idade.
         function CalcIdade() {
             let atual = new Date().getFullYear()
-            iidade.innerHTML = Number(atual) - Number(iano2.value)
+            iidade.innerHTML = Number(atual) - Number(iano.value)
         }
     </script>
 </body>
