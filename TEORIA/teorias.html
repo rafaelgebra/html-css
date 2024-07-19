@@ -1539,3 +1539,41 @@ Importânte ressaltar que no iframe tem que tem um name="", assim como no exempl
 </html>
 
 <!--        Capítulo 24 Aula 11 - Elementos output em formulários HTML      -->
+
+
+        <!DOCTYPE html>
+        <html lang="pt-br">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Formulário</title>
+            <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+        </head>
+        <body>
+            <h1>Exemplo de Formulário</h1>
+            <form action="cadastro.php" method="get" autocomplete="on">
+                <p>
+                    <label for="iano">Em que ano você nasceu? </label>
+                    <input type="number" name="ano" id="iano" min="1900" required oninput="CalcIdade()" placeholder="1900"> <!-- o placeholder é para colocar uma "valor temporario no campo do input" depois que começa a colocar o valor ele some-->
+                    
+                </p>
+                <p>
+                    <label for="iidade">Sua idade é: </label>
+                    <output name="idade" id="iidade">0</output> <!-- com o output para da para "trabalhar com o javaScript"-->
+                </p>
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </p>
+            </form>
+            <script>// Isso é um JavaScript Uma função para pegar a data atual e fazer a subtração com o ano de nascimento, mostrando a idade.
+                function CalcIdade() {
+                    let atual = new Date().getFullYear()
+                    iidade.innerHTML = Number(atual) - Number(iano.value)
+                }
+            </script>
+        </body>
+        </html>
+
+
+<!--      Capítulo 24 Aula 01 - O que são Media Queries em CSS      -->
