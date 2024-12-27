@@ -1625,4 +1625,18 @@ Introdução do Capítulo.
               A altura da coluna vai ser configurada pelo main-axis. E a largura pelo cross-axis. 
 <!--    Empacotamento e fluxo no Flexbox CSS      -->
 <!--    Aula 4-->
-        
+        O foco do estudo ainda continua no flex-container = bloco pai. dentro desses bloco tem os item ou também chamados de filho.
+          flex-wrap - é o comportamento do container pai.
+            O incolimento de uma flex-box vai depender muito da capacidade/conteudo dentro delev.
+
+            flex-wrap: nowrap; - significa não quebrar.
+            flex-wrap: wrap; - quebra em sentido do eixo transversal (cross-axis)
+            flex-wrpa: wrap-reserve; - vai continuar com a quebra mais sempre em sentido oposto/contrario do eixo transversal (cross-axis)
+
+        Simplificando o código. ()
+          flex-direction + flex-wrap. Ex:
+              flex-direction: row;
+              flex-wrap: nowrap;
+                SIMPLIFICANDO FICA = flex-flow: row, nowrap;
+                  A primeira configuração (row) é a direção e o segundo (nowrap) é se vai ou não "quebrar".
+
