@@ -1597,7 +1597,7 @@ Introdução do Capítulo.
         - Projeto Final (portfólio)
 
 <!--    Primeiros passos com Flexbox CSS    -->
-<!--    Aula 2    -->
+<!--    Aula 1    -->
     Neste Capitulo terá como foco o CSS3 os Modulos - CSS Flexible Box Module Level 1. (caixa flexivel, CSS Grid Layout Module Level 1/2 )
 
         Qual o formato da água? Depende do deu recipiente/container
@@ -1605,7 +1605,7 @@ Introdução do Capítulo.
         Flaxible Box Module dentro desse conteúdo pode criar outras caixas, mas deixando dinamico.
 
 <!--    Direções e Eixoa Flexbox CSS-->        
-<!--    Aula 3    -->
+<!--    Aula 2    -->
         Flex pai - Container = display: flex
         flex-direction: row (padrão); -> leitura da esquerca para a direita. # Deitado da esquerda para direita.
         flex-direction: row-reverse; -> Leitura da esquerda para a direita porém os icones estaram arrumados invertido, da direota para a esquerda.
@@ -1624,7 +1624,7 @@ Introdução do Capítulo.
             Então o main-axis, vai para o lugar do cross-axis.
               A altura da coluna vai ser configurada pelo main-axis. E a largura pelo cross-axis. 
 <!--    Empacotamento e fluxo no Flexbox CSS      -->
-<!--    Aula 4-->
+<!--    Aula 3  -->
         O foco do estudo ainda continua no flex-container = bloco pai. dentro desses bloco tem os item ou também chamados de filho.
           flex-wrap - é o comportamento do container pai.
             O incolimento de uma flex-box vai depender muito da capacidade/conteudo dentro delev.
@@ -1641,6 +1641,7 @@ Introdução do Capítulo.
                   A primeira configuração (row) é a direção e o segundo (nowrap) é se vai ou não "quebrar".
 
 <!--    Alinhamento nos eixos flex-box        -->
+<!--    Aula 4  -->
         Alinhanento no eixo principal (main-axis) = justify-content.
           O main-axis tem dois pontos importante. O main-star (inicial) e main-end(final),
 
@@ -1669,3 +1670,14 @@ Introdução do Capítulo.
             align-items: flex-start; <!-- Isso significa que sempre vai 'colar' no inicio do eixo transversal, e o espaço vai vazio vai ficar em baixo.  -->
             align-items: flex-end; <!-- Faz a mesma coisa qie o flex-star, porém ao contrário-->
             align-items: center; <!-- Vai dividir na metade em parte iguais o cross-axis, depois vai deixar uma parte em banco em cima no cross-start e outra no cross-end.-->
+<!--    Centralização absoluta com Flexbox    -->
+<!--    Aula 5  -->
+        Centralização de conteúdo no centro da tela.
+          CSS Flexible Box Module.
+            flex-container.
+              1 -  Saber aonde esta o eixo principal (main-exis) e o eixo transversal/secundario (cross-axis).
+                  # nesse exemplo esta sendo usado para centralizar no eixo principal a configuração "justify-content" e para a configuração do transversal "align-items"
+
+                  Basicamente por essas duas configuração por no center:
+                    justify-content: center;
+                    align-items: center;
