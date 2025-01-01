@@ -1681,3 +1681,34 @@ Introdução do Capítulo.
                   Basicamente por essas duas configuração por no center:
                     justify-content: center;
                     align-items: center;
+
+<!--   Alinhamento de elementos empacotados no flexbox     -->
+  <!--    Aula 6    -->
+      Conteúdo empacotado.
+        flex-flow: row wrap; # O conteúdo fica em linha e ele "quebra ade linha" se diminue muito.
+            * Lembrando que é sempre importânte saber aonde fica os eixos, (principal e onde fica o main-start e main-end) e (cross-axis e onde começa o cross-start e o cross-end).
+        
+      (* Resulmindo)
+        align-content: Vai alinhar os itens no deixo transversal MAS quando estão empacotados.
+        align-items: Vai alinhar os itens dentro do eixo transversal
+        justify-content: Vai alinhar o conteúdo dentro do eixo principal.
+
+        align-content: stretch; <!-- Conficuração padrão (stretch)-->
+          Essa conficuração faz com que sejá dividido de formas iguai o "espaço", dependendo dos itens dentro do container. (Isso acontece na conficuração no eixo transversal 'cross-axis')
+
+        align-content: flex-start;
+          Essa configutação faz com que todo o conteúdo vá para o cross-start. O restante do espaço fique em "libre/em branco". 
+        
+        align-content: flex-end;
+          Essa configuração fez com que todos os itens vá para o cross-end. O restante do espaço fica "livre/em branco". 
+
+        align-content: center;
+          Essa configuração faz com que sejá dividido os espaços em brando em duas partes iguais, uma em cima a outra em baixo sendo que o conteúdo fica no centro do cross-axis.
+        
+        Também tem as configurações internas das poções dos itens.  
+        align-content: space-between;
+          Essa configuração, os elementos ficam nas extremindades do cross-axis e o espaço fica no meio para futuros conteúdos/elementos.
+        align-content: space-evenly;
+          Essa configuração digive o conteúdo em partes eguais de espaço entre-si (no eixo transversal), e deixa o mesmo espaço em cima, no meio e em baixo.
+        align-content: space-around;
+          Essac onfiguração faz bem parecido com o stretch. Porém a diferança é que o itens ficam dentro dos espaços e dividios de forma simétrica.
