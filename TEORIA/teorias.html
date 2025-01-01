@@ -1712,3 +1712,25 @@ Introdução do Capítulo.
           Essa configuração digive o conteúdo em partes eguais de espaço entre-si (no eixo transversal), e deixa o mesmo espaço em cima, no meio e em baixo.
         align-content: space-around;
           Essac onfiguração faz bem parecido com o stretch. Porém a diferança é que o itens ficam dentro dos espaços e dividios de forma simétrica.
+
+<!--  Anatomia dos itens Flexbox  -->
+  <!--  Aula 7  -->
+    Por padrão os itens NÃO são flexíveis, as da para mudar isso nas configurações.
+        Propriedade. order:
+          Por padrão o order já é 0 (order: 0;) consegue ordemar mudar a ordem dos itens.
+    
+        Propriedade align-self:
+          Se aplica a cada um dos item se quiser, se aplica aos itens e ele vai funcionar direto no eixo transversal.
+          
+        align-self, só se aplica no cross-axis. 
+          Primeira propriedade "auto".
+            Auto, pega as configurações do alinhamento vertical do seu pai (pode ser align-content ou align-items).
+          Segunda propriedade "flex-start".
+            Alinhamento perto/grudado do flex-start. 
+          Terceira propriedade "flex-end".
+            Alinhamento perto/grudadp do flex-end.
+          Quarta propriedade "center".
+            Center calcula o centro entre o flex-start e o flex-end.
+          Quinta propriedade "stretch".
+            "Estica", para ocupar o tamanho inteiro eixo transversal.
+          
